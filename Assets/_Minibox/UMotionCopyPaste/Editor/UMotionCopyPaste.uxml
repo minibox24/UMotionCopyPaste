@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Minibox/UMotionCopyPaste/Editor/UMotionCopyPaste.uss?fileID=7433441132597879392&amp;guid=9bf63eb45bf153148ab525f98d733610&amp;type=3#UMotionCopyPaste" />
+    <ui:VisualElement style="flex-grow: 0; flex-direction: row; margin-top: 14px; margin-bottom: 14px; margin-right: 4px; margin-left: 4px; align-self: center; justify-content: center; width: 100%; height: auto; flex-shrink: 0;">
+        <ui:Label text="최첨단 UMotion 복붙툴" name="Title" style="-unity-font-style: normal; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-shrink: 0; height: auto; font-size: 20px; -unity-text-align: middle-center; white-space: normal;" />
+        <ui:Label text="by minibox" name="Title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 4px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: lower-center; -unity-text-outline-color: rgba(247, 247, 247, 0); color: rgb(155, 155, 155); white-space: normal;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 0; flex-direction: row; padding-right: 4px; padding-left: 4px;">
+        <ui:TextField picking-mode="Ignore" label="이름" password="false" usage-hints="None" name="NameField" style="flex-direction: column; flex-grow: 1; flex-shrink: 0;" />
+        <ui:Button text="복사" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CopyButton" style="margin-top: 4px;" />
+    </ui:VisualElement>
+    <ui:ListView name="CopyList" show-border="true" virtualization-method="DynamicHeight" style="margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px;" />
+</ui:UXML>
